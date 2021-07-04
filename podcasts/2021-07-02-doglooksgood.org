@@ -1,0 +1,35 @@
+#+TITLE: Shi Tianshu(DogLooksGood)
+
+* 嘉宾个人简介
+  - 姓名: 石天舒
+  - 网络 ID: [[https://github.com/DogLooksGood][doglooksgood]]
+  - 社交信息: [[https://space.bilibili.com/1281376][B站]] 无知的菜狗, 基本不使用其它社交媒体
+  - 工作经历: Secret
+  - 目前 Emacs 的配置，TUI为主 Emacs 28
+
+* Emacs 初印象
+  - 早期迷恋于 Unixporn 上展示的桌面配置，Emacs 是接触这种风格的契机
+  - 使用中感觉速度慢，不稳定，经常出现错误和卡死
+  - 可交互的 elisp 有一种远离了工业化的清新感
+
+* Emacs 学习经历
+  - 经历过反复的拿起和放下，在不同开发工具间横跳
+  - Emacs 提供的创造的可能性是自己用下去的动力
+  - 逐步从自己的习惯走出来，了解 Emacs 所有的各种功能
+  - 写插件可以收获很大的成就感
+
+* 日常工作流
+  - 使用 Emacs 做为唯一编辑器
+  - 配合语言的 REPL 或 Tmux 来构造交互的开发体验
+  - 自己针对具体的问题写小的 Elisp 函数来提高效率
+
+* 推荐的学习方式
+  - 知道自己想要的东西比了解语法和 API 更加重要
+  - Emacs 的细节总可以给你惊喜但不需要执着于去了解 Emacs 的全貌
+  - 社区高手多，提问的收益很高
+
+* Share
+  EmacsRime 输入法
+
+* 其它
+  Clojure 是个好语言
