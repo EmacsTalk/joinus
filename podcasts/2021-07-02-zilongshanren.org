@@ -1,0 +1,54 @@
+** 嘉宾个人简介 (2min)
+姓名，网络 ID，社交信息
+
+** 工作经历 (3min)
+cocos -> tencent
+
+** Emacs 入坑经历 （~4min)
+Vim -> Emacs -> Spacemacs
+
+**  目前 Emacs 的配置，包括：GUI/终端、版本等（20min)
+*** Emacs 初印象，5 分钟
+Better hacking Environment regards to vim
+
+*** Emacs 学习Killer feature, most-loved feature
+why learning Emacs?
+
+- org-mode
+- magit
+- evil
+- customization (REPL)
+- community
+
+** Emacs 的推荐学习方式（5min）
+Learn a little bit vim.
+Learn Emacs the hard way
+Learn Spacemacs/Doom
+Use it in your daily life.
+
+** 日常工作流（10 分钟）
+When in Cocos, I use Emacs as my main editor.
+I use Org-mode to management my todo list and my project long tern goal.
+I use magit to commit git and write all the C++ and javascript code in Emacs.
+I don't use lsp often, I use ctags as a completion backend for js & ts.
+I use irony as c++ backend for code completion.
+
+When in Tencent, I mainly use Emacs as a GTD tool and a note taking tools.
+I configure Spacemacs like keybindings in Rider. My daily job is Game Dev.
+
+** 技术学习与个人成长 （10min）
+Reading. books/video/blogs/github
+Learning what? programming langugae, frameworks, tools, basic theory or Data datastructure and algorithm?
+How to manage your time properly? learning, health, finance, energy.
+knowledge, skill, tools, experience?
+
+
+** 编码思考（5min）
+Make it work, make it better, make it faster.
+minimize side effect.
+SOLID principle and DDD
+Optimize for scaling when doing project.
+refactoring principles.
+
+
+** 结束 (1min)
