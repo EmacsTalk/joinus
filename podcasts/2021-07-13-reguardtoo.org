@@ -1,0 +1,43 @@
+** 嘉宾个人简介 (2min)
+姓名，网络 ID，社交信息
+
+** Emacs 入坑经历 （~4min)
+Vim -> Steve Purcell的配置
+**  目前 Emacs 的配置，包括：GUI/终端、版本等（20min)
+*** Emacs 初印象，5 分钟
+按多了手疼.快捷键不习惯.
+
+*** Emacs 学习Killer feature, most-loved feature
+- org-mode
+- EVIL
+- Lisp灵活强大, API数量多
+
+** Emacs 的推荐学习方式（5min）
+- 掌握普通编辑器基本技术(比如Visual Studio Code菜单上的命令都至少用过一遍
+- 学Vim
+- Emacs安装EVIL
+- 学会文本文件操作术(熟悉编辑器搜索文本找文件的操作,结合Lisp和GNU的命令行工具改善工作流)
+
+** 日常工作流（10 分钟）
+主要是写javascript,都用Emacs
+
+Org-mode用来记工作笔记
+
+Git操作基本在Bash Shell完成. Bash Script会结和Emacs的命令行. vc和magit的个别命令会用到.
+
+很少用用LSP. 代码导航用"counsel-etags",代码完成用"company-ctags".两个插件都需要Ctags.
+
+找文件用"find-file-in-project",需要"GNU Find"
+
+用"shellcop"和"shell-mode"调试命令行程序
+
+** 技术学习与个人成长 （10min）
+主要看reddit和stackexchange. 读书也很重要.不一定是专业书籍,看看历史文学哲学的书
+
+** 编码思考（5min）
+测试驱动开发很有用,资源有限时要思考如何用有限测试用例下覆盖关键场景
+
+从合理控制开发成本的角度思考如何写好代码.
+
+熟悉命令行工具,有时可以取代自己写的代码
+** 结束 (1min)
