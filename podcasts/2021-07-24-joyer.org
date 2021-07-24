@@ -1,0 +1,70 @@
+#+TITLE: Joyer Huang(DelphiNew)
+
+** 嘉宾个人简介 (2min)
+  - 姓名: Joyer(领蜂)
+  - 网络 ID: Joyer, DelphiNew/uppet
+  - 社交信息: [[https://blog.csdn.net/delphinew/][csdn]], [[https://github.com/uppet][github]]
+  - 工作经历：竞赛型程序员，IDE开发，浏览器引擎开发，开发者工具开发
+
+** Emacs 入坑经历 （~20min)
+  - Turbo Pascal -> VIM -> ([[https://www.scintilla.org/][scintilla]]) -> Emacs
+  - [[https://blog.csdn.net/DelphiNew/article/details/2053676][《Effective Emacs》]]翻译
+  - 曾专业开发过IDE编辑器组件,受到[[http://web.mit.edu/~yandros/doc/craft-text-editing/index.html][《The Craft of Text Editing》]]影响很深
+  - 喜欢八黑客界的八卦:
+    - [[https://web.archive.org/web/20110723033542/http://www.burlingtontelecom.net/~ashawley/gnu/emacs/doc/emacs-1978.html][rms]]
+    - [[https://www.jwz.org/][jwz]]
+    - [[https://www.oreilly.com/openbook/opensources/book/tiemans.html][Michael Tiemann]]
+
+
+**  目前 Emacs 的配置，包括：GUI/终端、版本等（5min)
+- 回归原始极简主义，几乎裸奔，[[https://blog.csdn.net/DelphiNew/article/details/6732295?spm=1001.2014.3001.5501][个人的.emacs]]非常潦草
+- 会去读别人的配置，但不会特别花心思做得复杂豪华，掌握要领就行，长期来看简洁的基础功能灵活运用最稳定高效
+- 偶尔会编译主线的emacs来用，定期逐行读 emacs/NEWS 文件 (C-h n)
+
+*** Emacs 初印象，5 分钟
+- 2000年玩mandriva linux整个系统里只有emacs能有完备的中文能力，但此后主要用VIM
+- 06-08年做IDE组件开发，了解领域原理技术，判定emacs为编辑器领域标杆，入坑长期使用，主动给社区一些贡献
+- 刚开始都入魔，后面就佛系使用了
+
+*** Emacs 学习Killer feature, most-loved feature
+- ibuffer/buffer/isearch/occur/eshell/info/calc/etags
+- 业内最全的编码和编程语言支持
+- advanced, extensible, customizable, self-documenting
+- *scratch*
+- 在任何设备和系统可用，肉眼可见的终生使用价值
+- org-mode
+
+
+** Emacs 的推荐学习方式（10min）
+- 学好写好中文和英文(连接30亿人的智慧和知识积累)
+- 看 Intro 入门，找到基本的使用安全感，找高手解惑，自己徒步探索要有限度和节奏
+- 不用去做闹情绪的比较，解决手头问题和好奇心就行了
+- 读我翻译的 Effective Emacs ^_
+
+** 专家 Emacs 的推荐学习方式
+- Cover by Cover读Emacs/Elisp Reference
+- 读源码
+- 修功能
+- 提优化
+- 分享，参与维护
+
+** 日常工作流（10min）
+- bash/emacs/chrome(firefox) == 操作系统
+- 公司的流程/OA/邮件用chrome，其他工具偶尔也使用，比如vscode, android studio, xcode
+- 文本全部先放到emacs buffer里再处理，日常开500+ buffer
+- 工作中可能用到c++/java/js/python/dart/swift/kotlin/lisp....
+- 如考虑重度使用某个系统，会读一下源码原理文档
+
+** 技术学习与个人成长 （10min）
+- 08年以前以看专著为主，专著会有专门的主题和编排，非常有利于扎实的掌握
+- 后来看论文和 Blog 讨论偏多
+- 实际项目时，代码文档论文都看，难点和长远的领域还是会翻专著
+
+** 编码思考（5min）
+- 人不是神，追求理想的同时不能完全抛弃肉身
+- 参与分工，融入周围做出社区贡献或者团队价值
+- 自己主导创造的话，要考虑预算成本风险这些社会科学范畴的事情
+
+** 结束 (1min)
+- Dart/Flutter是很不错的东西
+- Coq是接下来想了解的编程语言(Geohot)
