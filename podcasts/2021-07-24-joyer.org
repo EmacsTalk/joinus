@@ -1,24 +1,23 @@
+#+TITLE: Joyer Huang(DelphiNew)
+
 ** 嘉宾个人简介 (2min)
-姓名: Joyer(领蜂)
-网络 ID: Joyer, DelphiNew/uppet
-社交信息: https://blog.csdn.net/delphinew/, https://github.com/uppet
-工作经历：竞赛型程序员，IDE开发，浏览器引擎开发，开发者工具开发
+  - 姓名: Joyer(领蜂)
+  - 网络 ID: Joyer, DelphiNew/uppet
+  - 社交信息: [[https://blog.csdn.net/delphinew/][csdn]], [[https://github.com/uppet][github]]
+  - 工作经历：竞赛型程序员，IDE开发，浏览器引擎开发，开发者工具开发
 
 ** Emacs 入坑经历 （~20min)
-- Turbo Pascal -> VIM -> (scintilla) -> Emacs
-- 《Effective Emacs》翻译
-- 曾专业开发过IDE编辑器组件
-- 喜欢黑客界的八卦,rms,jwz,Michael Tiemann
+  - Turbo Pascal -> VIM -> ([[https://www.scintilla.org/][scintilla]]) -> Emacs
+  - [[https://blog.csdn.net/DelphiNew/article/details/2053676][《Effective Emacs》]]翻译
+  - 曾专业开发过IDE编辑器组件,收[[http://web.mit.edu/~yandros/doc/craft-text-editing/index.html][专著]]影响很深
+  - 喜欢八黑客界的八卦:
+    - [[https://web.archive.org/web/20110723033542/http://www.burlingtontelecom.net/~ashawley/gnu/emacs/doc/emacs-1978.html][rms]]
+    - [[https://www.jwz.org/][jwz]]
+    - [[https://www.oreilly.com/openbook/opensources/book/tiemans.html][Michael Tiemann]]
 
-*** 资料
-- http://web.mit.edu/~yandros/doc/craft-text-editing/index.html
-- https://www.oreilly.com/openbook/opensources/book/tiemans.html
-- https://web.archive.org/web/20110723033542/http://www.burlingtontelecom.net/~ashawley/gnu/emacs/doc/emacs-1978.html  
-- https://blog.csdn.net/DelphiNew/article/details/2053676
 
 **  目前 Emacs 的配置，包括：GUI/终端、版本等（5min)
-- 回归原始极简主义，几乎裸奔，.emacs非常潦草
-- https://blog.csdn.net/DelphiNew/article/details/6732295?spm=1001.2014.3001.5501
+- 回归原始极简主义，几乎裸奔，[[https://blog.csdn.net/DelphiNew/article/details/6732295?spm=1001.2014.3001.5501][个人的.emacs]]非常潦草
 - 会去读取别人的配置，但不会特别花心思做得复杂豪华，掌握要领就行，长期来看简洁的基础功能灵活运用最稳定高效
 - 偶尔会编译主线的emacs来用，定期逐行读 emacs/NEWS 文件 (C-h n)
 
