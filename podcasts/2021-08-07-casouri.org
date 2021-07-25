@@ -1,0 +1,42 @@
+#+TITLE: 付禹安
+
+* 嘉宾个人简介，5-10 分钟
+- 姓名: 付禹安
+- 网络 ID: casouri
+- 社交信息: [[https://github.com/casouri][GitHub]], [[https://archive.casouri.cat][博客]]
+- 工作经历：学生
+
+* 目前 Emacs 的配置，包括：GUI/终端、版本等
+- 不用太多插件，目前有79个。
+- 不需要花哨的功能，配置太多、维护包袱越重：不好维护、速度慢、容易出错
+- 平时编译开发版Emacs用，现在的开发版是28.0.1
+- 写一些自用的插件：代码精简，debug容易，贴合个人的需求
+
+* 学习经历，10-20 分钟
+- 一开始用Atom，Sublime Text，因为厌烦在键盘和鼠标之间切换而寻找键盘操作的编辑器，看了陈斌吹Emacs的文章而入坑。
+- 从Spacemacs和Evil开始，后来转向用自己的配置和Emacs快捷键。一开始有些简单的功能搞不出来，主题，字体，load-path等等。
+- 对写插件很有兴趣，写了不少
+
+** Emacs 推荐学习方式
+使用Emacs方面，需要什么功能网上搜索就好，写Emacs Lisp的话：
+- 学会用Info，读Emacs自带文档
+- Helpful
+- help-gnu-emacs
+
+** 修改Emacs源码的经历
+- 学校作业写C程序需要debug，用Emacs的gdb，发现不方便的地方。
+- Org Mode里开软折行，中英混合的文本效果很差
+
+* Emacs需要提高的地方
+- 介绍Emacs internal的文档严重不足
+- 更多quick guide介绍API，自带文档比较繁杂，不适合快速阅读
+
+* 日常工作流，10分钟
+- macOS
+- 除了Emacs，软件都尽量开箱即用，不做配置
+- iTerm2，Mail.app，fish
+
+* Share 环节，推荐以下内容，5分钟
+- [[https://github.com/Malabarba/aggressive-indent-mode][aggresive-indent-mode]]
+- undo-redo
+- [[https://practicaltypography.com][/Practical Typography/]]
