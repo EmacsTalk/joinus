@@ -1,0 +1,37 @@
+** 嘉宾个人简介 (2 min)
+姓名 Kathy
+网名 Kathy_H @ Emacs.china.
+网站 sheishe.xyz
+
+** Emacs 入坑经历 (3 min)
+花了大概两个月入门，搞清楚Emacs调用的原理，和Elisp以及其他lisp家族语言的不同。
+子龙山人视频 -> 魔改spacemacs-zilongshanren
+
+*** Emacs 初印象，(5 分钟)
+当时比较着急使用emacs投产，所以反复崩溃中还是建立起了工作流程，使用顺手以后比较方便。
+没有修改任何keybindings. 确保换个电脑工作场景肌肉记忆也可以有效。
+
+最近考虑转dvorak+小鹤音型，这样传统的keybindings可能失效，所以记忆function名称也很有用。
+
+*** Emacs 学习 (5 min)
+Killer feature不赘述
+主要讲讲Emacs在学术方面建立text based work management经验：
+https://emacs-china.org/t/v1/8218/53?u=kathy_h
+org-mode管理笔记
+org-reveal做能展示代码高亮的slides
+Anki制作记忆卡片
+Latex输出格式化的pdf/slides
+
+*** Emacs 的学术博客/视频推荐 (3 min)
+Youtube: Mike Zamansky (Hunter College professor)
+B站：金色飞贼小米
+
+** Emacs日常有趣 (5 min)
+参加Emacs London meetups. 发现并不是所有的Emacer都程序员，很多人也不是仅在Emacs小组活动。
+coding dojo: 修改游戏，研发头脑风暴，学习Clojure，学习nixOS etc。
+
+** 技术学习与个人成长 (10 min)
+机缘巧合来到英国，欧美的教育商品化的好处是容易转专业，能在看得见的努力范围之内找到合适的职业生涯优化。
+工科EE, 药学，cs业界应用的funding研究都比较多。
+案例：刘佳 文科生转天体物理，普林毕业成为日本东京大学副教授。
+其它问题随意闲聊。
