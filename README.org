@@ -1,7 +1,7 @@
 * Join EmacsTalk
 本仓库主要记录嘉宾在参与 EmacsTalk 录制前的一些准备事宜。
 
-理论上每一期的节目会在 podcasts 文件夹内新建一个名为 ={date}-{guest-name}= 的 org/md 文件，比如 [[file:podcasts/2021-06-26-xigua.org][2021-06-26-xigua.org]]），内容为下面的录制大纲：
+理论上每一期的节目会在 podcasts 文件夹内新建一个名为 ={date}-{guest-name}= 的 org/md 文件，比如 [[file:podcasts/2021-06-26-xigua.org][2021-06-26-xigua.org]]，内容为下面的录制大纲：
 ** 录制大纲
 1. 嘉宾个人简介
    1. 姓名，网络 ID，社交信息
