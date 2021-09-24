@@ -1,0 +1,83 @@
+#+TITLE: Feng Shu
+
+* 嘉宾个人简介
+  - 姓名: Feng Shu
+  - 网络 ID: tumashu
+  - 社交信息: 基本不用微博抖音之类的，平时就看看网页
+  - 工作经历: 某卫健委信息中心的一个办事人员
+  - 目前 Emacs 的配置： https://github.com/tumashu/emacs-helper
+
+* Emacs 初印象
+  - 字体贼拉丑
+
+* Emacs 学习经历
+  - 最开始我是用 vim，不过现在只记得 :q!.
+  - 最初接触 emacs 的时候，字体设置特别麻烦，果断放弃，再捡起来是 emacs 支持 xft 之后。
+  - 一开始虽然看了很多教程，抄了很多代码，但真正入门是通过维护 pyim 来实现的。
+
+* 日常工作流
+  - 使用 Emacs 做为编辑器
+  - 用 org-mode 和 org-agenda 管理日常工作中的项目进度和乱七八糟的事情。
+  - 不做业务方面的开发，也就写写 elisp.
+
+* 推荐的学习方式
+  1. 第一阶段：初学攒配置
+     - 平时经常使用，记住常用几个快捷键，这个阶段最好把 emacs 作为一个
+       普通编辑器使用，屠龙刀再牛逼，修指甲也没有指甲刀好使。
+
+     - 看看 emacs 自带文档，多读读社区大牛的配置，学习学习怎么配置
+       emacs, 个人建议不要看那种包装特重的配置，尽量看那种只使用 emacs
+       自带的和 gnu-elpa 的配置。
+
+     - 了解了 emacs 之后，可以根据个人需要，看看 spacemacs 之类的社区
+       配置包，我个人不使用，不做过多评价。
+
+  2. 第二阶段：入门写扩展
+
+     1. 这个阶段大体要掌握 elisp 语言的语法，以及常用函数的使用方法。
+
+     2. 可以参加自己经常使用的并且喜欢的 package 的开发工作，提交
+        patch.
+
+     3. 也可以自己维护一个 package.
+
+     4. 思路上要转变： 写配置 != 写 package, 很早以前写的一个小文章，
+        虽然现在看来有点幼稚： https://github.com/tumashu/eltips
+
+     5. 这里推荐 gnu-elpa 和 nongnu-elpa
+        1. http://git.savannah.gnu.org/cgit/emacs/elpa.git
+        2. http://git.savannah.gnu.org/cgit/emacs/nongnu.git
+
+
+  1. 第三阶段: 一入 emacs.git 深似海
+
+     1. 这个阶段可以试着给 emacs.git 提交 elisp patch, 要求英语水平要
+        很高，因为即使一个很小的 patch, emacs 管理者也会提出许多问题，
+        如果英文不好，难度就很大了。
+
+     2. emacs 核心开发者和我们普通用户的思路不一样，要有一个适应过程。
+
+  2. 第四阶段：你不入 C 狱谁入 C 狱。
+
+     1. emacs 社区的大方向是，尽量写 elisp 而少写 C.
+
+     2. 这个阶段可以试着改改 emacs 的 C 代码，接受 C 的洗礼。
+
+  3. 第五阶段：千万里挑一 emacs 的武学奇才。 
+
+     1. 这个阶段基本就属于 emacs 的核心开发者了，可以引领 emacs 的发展方向。
+
+     2. 需要千万里挑一的武学奇才。
+
+
+本人现在在第二阶段晃悠，已经到达天花板 :-)
+
+* Share
+  - 字体对齐： cnfonts (使用社区配置的人不建议使用)
+  - 中文输入法： emacs-rime, emacs-smart-input-source, pyim (emacs 中文输入的三大解决思路，估计以后可能不会再有其它思路了)
+  - 拼音五笔搜中文： pyim, pinyin-search 
+  - 补全框架： company, ivy, selectrm, vertico, consult, (本人使用 vertico + consult, 简单够用)
+  - 弹出菜单框架： posframe
+  - 写文档： org-mode
+  - git 前端: magit
+  - 主题： modus-themes (覆盖全，不折腾，一开始看起来不咋地，但习惯了就OK)
