@@ -48,8 +48,7 @@
         1. http://git.savannah.gnu.org/cgit/emacs/elpa.git
         2. http://git.savannah.gnu.org/cgit/emacs/nongnu.git
 
-
-  1. 第三阶段: 一入 emacs.git 深似海
+  3. 第三阶段: 一入 emacs.git 深似海
 
      1. 这个阶段可以试着给 emacs.git 提交 elisp patch, 要求英语水平要
         很高，因为即使一个很小的 patch, emacs 管理者也会提出许多问题，
@@ -57,13 +56,13 @@
 
      2. emacs 核心开发者和我们普通用户的思路不一样，要有一个适应过程。
 
-  2. 第四阶段：你不入 C 狱谁入 C 狱。
+  4. 第四阶段：你不入 C 狱谁入 C 狱。
 
      1. emacs 社区的大方向是，尽量写 elisp 而少写 C.
 
      2. 这个阶段可以试着改改 emacs 的 C 代码，接受 C 的洗礼。
 
-  3. 第五阶段：千万里挑一 emacs 的武学奇才。 
+  5. 第五阶段：千万里挑一 emacs 的武学奇才。
 
      1. 这个阶段基本就属于 emacs 的核心开发者了，可以引领 emacs 的发展方向。
 
@@ -75,7 +74,7 @@
 * Share
   - 字体对齐： cnfonts (使用社区配置的人不建议使用)
   - 中文输入法： emacs-rime, emacs-smart-input-source, pyim (emacs 中文输入的三大解决思路，估计以后可能不会再有其它思路了)
-  - 拼音五笔搜中文： pyim, pinyin-search 
+  - 拼音五笔搜中文： pyim, pinyin-search
   - 补全框架： company, ivy, selectrm, vertico, consult, (本人使用 vertico + consult, 简单够用)
   - 弹出菜单框架： posframe
   - 写文档： org-mode
