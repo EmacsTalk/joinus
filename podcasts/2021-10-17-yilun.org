@@ -12,9 +12,9 @@
   2. 自己电脑平时只使用org mode相关功能整理笔记，比如org-roam,ebib等
   3. 原生的公式预览不是很方便，写了org－elp插件实现即写即预览效果
   4. 平常在远程服务器工作（超算中心），用的是一套专门针对terminal环境的配置
-  5. 写了一些和我工作内容和流程深度结合的插件，比如在超算中心管理数据集，处理进度。
+  5. 写了一些和我工作内容和流程深度结合的插件，比如在超算中心管理天文数据集，处理进度，slurm job status，管理pipipeline。
 ** 有趣的事情
-  1. 匹兹堡和emacs： james gosling在读匹兹堡博士时写了gosling emacs，
+  1. 匹兹堡和emacs： james gosling在匹兹堡读博士时写了gosling emacs，
      后交给rms托管，成为gnu emacs前身；CMU化学工程系教授John Kitchin是资深emacser，写了scimax和
      org－ref，用org－mode写课本，组里全部使用org－mode做reproducible research
 ** 推荐环节，推荐以下内容
