@@ -1,0 +1,22 @@
+** 嘉宾个人简介
+   1. 姓名：Yilun
+   2. github id： guanyilun
+   3. 工作经历：博士后，天体物理和宇宙学
+** Emacs 入坑经历
+   1. 本科使用vim, 博士期间为了auctex的公式预览功能入坑emacs，初印象：小拇指很疼
+   2. 第一年使用仅限于写latex文档，第二年逐渐了解org mode，开始在org mode整理笔记，后期转成在org mode里写latex
+   3. 对Lisp闻名已久，使用emacs提供了学习lisp的理由。学习经历从改写配置文件开始，后面系统的学习了一下。
+   5. 推荐的学习方式：从需求出发，不然容易溺水，学emacs像学习乐器
+** 日常工作流
+  1. 配置一开始自己搭，后面基于centaur emacs进行简化
+  2. 自己电脑平时只使用org mode相关功能整理笔记，比如org-roam,ebib等
+  3. 原生的公式预览不是很方便，写了org－elp插件实现即写即预览效果
+  4. 平常在远程服务器工作（超算中心），用的是一套专门针对terminal环境的配置
+  5. 写了一些和我工作内容和流程深度结合的插件，比如在超算中心管理数据集，处理进度。
+** 有趣的事情
+  1. 匹兹堡和emacs： james gosling在读匹兹堡博士时写了gosling emacs，
+     后交给rms托管，成为gnu emacs前身；CMU化学工程系教授John Kitchin是资深emacser，写了scimax和
+     org－ref，用org－mode写课本，组里全部使用org－mode做reproducible research
+** 推荐环节，推荐以下内容
+  1. ebib: 管理文献， org－elp即时预览公式
+  2. lex fridmann podcast，他也是emacser，有对james gosling采访提到了一些关于emacs的故事
