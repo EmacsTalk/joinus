@@ -1,7 +1,7 @@
 ** 嘉宾个人简介
    1. 姓名：Yilun
    2. github id： guanyilun
-   3. 工作经历：博士后，天体物理和宇宙学
+   3. 工作经历：美国匹兹堡读博士，天体物理和宇宙学，最近刚搬到加拿大多伦多做博士后
 ** Emacs 入坑经历
    1. 本科使用vim, 博士期间为了auctex的公式预览功能入坑emacs，初印象：小拇指很疼
    2. 第一年使用仅限于写latex文档，第二年逐渐了解org mode，开始在org mode整理笔记，后期转成在org mode里写latex
