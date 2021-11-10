@@ -1,0 +1,28 @@
+** 嘉宾个人简介
+   1. 姓名：Yilun
+   2. github id： guanyilun
+   3. 社交信息：[[https://github.com/guanyilun][Github]], [[https://guanyilun.github.io][网页]]
+   4. 工作经历
+      － 天体物理博士后
+      － 科研经历：凝聚态 -> 粒子物理 -> 宇宙学
+** Emacs 入坑经历
+   1. 本科使用vim, 博士期间为了auctex的公式预览功能入坑emacs，初印象：小拇指很疼
+   2. 第一年使用仅限于写latex文档，第二年逐渐了解org mode，开始在org mode整理笔记，后期转成在org mode里写latex
+   3. 对Lisp闻名已久，使用emacs提供了学习lisp的理由。学习经历从改写配置文件开始，后面系统的学习了一下。
+      提到得文章：http://www.catb.org/esr/faqs/hacker-howto.html
+   5. 推荐的学习方式：从需求出发，不然容易溺水，学emacs像学习乐器
+** 日常工作流
+  1. 配置一开始自己搭，后面基于centaur emacs进行简化
+  2. 自己电脑平时只使用org mode相关功能整理笔记，比如org-roam,ebib等
+  3. 原生的公式预览不是很方便，写了org－elp插件实现即写即预览效果
+  4. 平常在远程服务器工作（超算中心），用的是一套专门针对terminal环境的配置
+  5. 写了一些和我工作内容和流程深度结合的插件，比如在超算中心管理天文数据集，处理进度，slurm job status，管理pipeline
+** 有趣的事情
+  1. 美国生活
+     － 风俗习惯
+     － 有趣的人/事
+  2. 加拿大初体验
+
+** 推荐环节，推荐以下内容
+  1. ebib: 管理文献， org－elp即时预览公式
+  2. lex fridmann podcast，他也是emacser，有对james gosling采访提到了一些关于emacs的故事
