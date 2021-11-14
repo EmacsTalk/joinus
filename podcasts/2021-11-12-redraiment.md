@@ -23,9 +23,9 @@
 我的学习过程很普通，就是照着软件内的文档依次读了一遍：
 
 1. Emacs Tutorial：`C-h t`
-2. [https://www.gnu.org/software/emacs/manual/html_node/emacs/index.html](GNU Emacs Manual)
-3. [https://www.gnu.org/software/emacs/manual/html_node/eintr/index.html](An Introduction to Programming in Emacs Lisp)
-4. [https://www.gnu.org/software/emacs/manual/html_node/elisp/index.html](Emacs Lisp Reference Manual)
+2. [GNU Emacs Manual](https://www.gnu.org/software/emacs/manual/html_node/emacs/index.html)
+3. [An Introduction to Programming in Emacs Lisp](https://www.gnu.org/software/emacs/manual/html_node/eintr/index.html)
+4. [Emacs Lisp Reference Manual](https://www.gnu.org/software/emacs/manual/html_node/elisp/index.html)
 
 ## 日常工作
 
