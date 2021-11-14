@@ -45,7 +45,7 @@
 
 第二类日常工作积累下来的Emacs Lisp函数或Yasnippet模板。例如JSON格式化、代码转图片、一键运行Clojure函数的测试用例等。我会不定期地把日常工作中会频繁用到的操作写成Emacs Lisp函数，就像有些用MacBook的小伙伴会用Alfred，只是我把Emacs当成统一的工作入口。
 
-第三类与Emacs无关，我会把诸如gitconfig、pip.ini、npmrc、tmux.conf等其他工具的配置文档也都放到`~/.emacs.d/config`目录下统一管理。因为用Emacs时间比较就，期间换过很多次电脑，之前要花不少精力在新电脑上安装和配置软件，所以就把所有常用工具的配置放到`~/.emacs.d`统一管理，也方便跨电脑同步配置。
+第三类与Emacs无关，我会把诸如gitconfig、pip.ini、npmrc、tmux.conf等其他工具的配置文档也都放到`~/.emacs.d/config`目录下统一管理。因为用Emacs时间比较久，期间换过很多次电脑，之前要花不少精力在新电脑上安装和配置软件，所以就把所有常用工具的配置放到`~/.emacs.d`统一管理，也方便跨电脑同步配置。
 
 ## 经历分享
 
