@@ -1,0 +1,46 @@
+#+TITLE: Wang Yong(ManateeLazyCat)
+
+* 嘉宾个人简介
+  - 姓名: 王勇
+  - 网络 ID: [[https://github.com/manateelazycat][ManateeLazyCat]]
+  - 社交信息: [[https://manateelazycat.github.io/][ManateeLazyCat Blog]] 主要在我个人博客分享我的经历和见闻
+  - 工作经历: 书店管理员 -> J2ME手机游戏工程师 -> 服装制造厂 -> Deepin Linux CTO -> [[https://www.linakesi.com/pc_index][锂钠氪锶]] CEO (Linux的中文谐音 + 绝命毒师命名风格)
+  - 目前 Emacs 的配置: 从Emacs21开始用，日常用Emacs Git版本，至从有了EAF，其实Emacs什么版本都无所谓了
+
+* Emacs 初印象
+  - 2007年在成都开发手机游戏，当时天天沉迷游戏，觉得这样久了人会废掉，所以装Linux系统想从根上戒掉游戏，但是那时Linux本身可玩性还不够高，就选择折腾Emacs，一折腾就是15年，到现在没事还会折腾一下
+  - 2007年最开始和大家才参加工作一样，到处在[[https://www.emacswiki.org][EmacsWiki]]上拾荒抄配置，每天早上起床的动力就是去EmacsWiki闲逛，遇到好的代码就集成到自己配置，也不管自己用不用，折腾几个月觉得太无聊，就开始看Elisp Reference Manual, 大概坚持看了2个月，把大部分API都了解实践后开始编写Elisp插件，然后上传到[[https://www.emacswiki.org/emacs/AndyStewart][EmacsWiki我的主页]]上分享给他人，因为自己写的插件太多了，我应该是当年最高产的Elisp开发者之一
+  - 2008年签署了自由软件基金会（FSF）的版权协议，向Emacs核心贡献了 org-w3m.el 这个插件，因为FSF贡献步骤太麻烦，所以后来的插件都放到EmacsWiki上, 严格遵守GPL3协议。因为EmacsWiki大部分插件我都用过，所以2008年以后主要是在IRC的#emacs频道向很多Emacs前辈请教，通过和他们聊天进一步学习Emacs的深入知识, 期间编写了AutoInstall(最早的Emacs包管理器)、Anything(Helm前身)、MultiTerm(最早的多页面终端)等插件
+  - 2008 ~ 2009年这两年的时间，白天做服装制造的工作，晚上就研究Haskell，想用Haskell重新造一个Emacs -- [[https://wiki.haskell.org/Manatee][Manatee]], Manatee相关的视频效果大家可以在[[https://www.youtube.com/watch?v=weS6zys3U8k][YouTube]]中查看
+  - 2010 ~ 2018年，这8年主要在创建Deepin操作系统团队，大部分时间都在写Deepin，基本上没太多时间玩Emacs，很多Elisp代码增强都零星地写到我的个人配置[[https://github.com/manateelazycat/lazycat-emacs][LazyCat Emacs]]中
+  - 2018年离开深度后，创建了[[https://github.com/emacs-eaf/emacs-application-framework/][EAF]]项目，为了彻底实现多年前的小愿望 "Live in Emacs"，目前看效果还行，这几年也把一些个人的插件重新整理后放到Github，希望自己的插件能够帮助别人
+  
+* Emacs 学习经历
+  - 最开始和大家一样，心态比较浮躁，总想技术上成为天下第一，但是随着知识和阅历的增加，认识到天外有天，万物皆有灵后，心态发生了很大的变化，专心做事，不着急一步一步做反而做的更好
+  - 我最开始是一个Java/C++程序员，第一次接触Elisp就觉得好棒，编程视野彻底打开了，原来编程还可以这样随心所欲的玩
+  - 感谢沉下心阅读Elisp Reference Manual的那两个月，虽然很多API和参数极其无聊，但是你真的坚持看完后，基本上Emacs没有你解决不了的问题
+  - 除了第一年在到处抄配置每天Emacs都崩溃外，这么多年大部分时间都在写Emacs插件，写Emacs插件比写Linux代码更让我内心宁静，写的时候仿佛时间完全停滞了，很享受那种心流创造的过程，即使知道Emacs有这样和那样的问题，但是看着自己的插件融入Emacs整个大生态，全世界这么多聪明的插件作者共享自己的创造力，那种感觉就像站在大家一起建造的巴比伦塔下仰望星空，宏伟而荣幸，有时候我觉得Emacs比Linux更能代表自由软件运动的精神
+  - 没有Github之前，大家主要通过EmacsWiki、邮件以及IRC方式交流学习，都是硬核的给对方发送diff文件，现在Github流行后，主要通过Github的Issue和PR来互相交流协作
+  
+* 日常工作流
+  - 基本上就是Live in Emacs, Linux发行版只是启动器和跑Emacs的工具，一般来说就是用EAF和现有插件做所有事情，EAF开发过程中EAF无法使用，会偶尔用一下我写的DeepinTerminal和Chrome浏览器
+  - 日常使用插件组合包括：EAF、sort-tab、awesome-tray、snails、grammatical-edit、color-rg、auto-save、thing-edit、symbol-overlay、insert-translated-name、popweb，基本上常用插件我快进入自产自销的状态
+
+* 推荐的学习方式
+  - 好好沉下心看Elisp Reference Manual, 这绝对是投入产出比最高的Emacs学习方式
+  - 记录每天用Emacs的不爽，先产生改进的目标再编写Elisp插件，实践是最快的成长方式
+  - 不要和别人比，内心安定后，让自己进入热爱生活的状态，会更有创造力
+
+* 有价值的事情
+  - 开源软件维护很辛苦，经常下班以后还需要回复别人的Issue和需求，一般处理完就半夜了。现在我会保留一个好的节奏，不会马上修复，等有时间再看Issue。令我欣慰的是，十多年一直贡献开源，每年都会有人用邮件或者Git回复的形式发来感谢，那种发自内心的感谢，让我感受到人与人之间的美好，即时我们永远都不可能在线下见面认识
+  - 2009年给Gtk2hs贡献代码的时候，第一次给作者发送上千行大补丁，现在看那是非常不妥的。这么多年实践下来，很多开源作者都喜欢精简干净的小补丁，如果大家要做开源贡献，建议从小处入手，这样可以最快的合并代码到主分支，也能最快和作者达成共识，一起进步
+  - 分享自己的代码，以码会友，网上交了很多有才华的网友，每天都可以从这些有才华的朋友身上学习很多
+
+* 推荐
+  - 当然推荐我的 [[https://github.com/emacs-eaf/emacs-application-framework/][EAF]] 啦，希望Emacs这种全键盘剑法操作可以永久流传给新一代的年轻人
+  - 推荐大家在喜马拉雅听罗大伦老师讲《道德经》，我最近一直在听，原来对‘道’的认识有很多偏见和大众流行认识，听了罗大伦老师的白话讲解后，明白了很多道理。开发者是一个是非观非常分明的‘人种’，但是非代码的世界是纷繁复杂的，有时候我们要跳出 “编程逻辑映射世界” 的想法再去看世界后，我们的生活也许会更加幸福
+  - 推荐大家多学不同的编程语言，每学一种编程语言就会增加一种看世界的不同角度，学得编程语言多了，自身能力会更强，心态也会更加包容
+  - 推荐我喜欢的三个人：Richard Stallman、John Carmark、王阳明, 这三个人的经历一直激励着我
+
+    
+
