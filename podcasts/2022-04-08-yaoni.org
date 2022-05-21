@@ -1,0 +1,52 @@
+#+TITLE: Yaoni(遥泥)
+
+* 嘉宾个人简介
+  - 姓名: Yi Wang
+  - 网络 ID: Yaoni(遥泥)
+  - 社交信息:
+    - 博客: [[https://yaoni.me]]
+    - LinkedIn: [[https://www.linkedin.com/in/thomaswangyi/]]
+  - 工作经历: 我也属于半路出家的码农，目前是数据工程师
+  - 目前 Emacs 的配置: [[https://github.com/yatsky/emacs-init]]
+
+* Emacs
+:LOGBOOK:
+CLOCK: [2022-05-21 Sat 22:50]--[2022-05-21 Sat 23:08] =>  0:18
+:END:
+** Emacs 缘起
+  - Emacs 的故事需要从 vim 和 org mode 说起 :facepalm:，我大概是17年左右开始用的 vim，已经忘了当时是怎么了解到 vim 的了，然后就觉得很酷炫，就开始学怎么用。
+  - 接触 vim 之后慢慢开始想要用 vim script，觉得这个东西真**得难，然后想要换编辑器，19年年中左右开始接触 Emacs，听说非常好配置，觉得可以试一试。
+  - 此外我其实是一个挺喜欢记笔记的人，但是我的字写得很烂，写下来的东西自己都看不懂，其他的电子笔记又不好用（我用过印象笔记、OneNote 和 Notion），不能像 vim 那样用键盘操作，而且他们总喜欢搞一些有的没的智能搜索，反而把工具变得很难用。忘了在哪里听说了 org mode 这个东西，觉得似乎是一个好工具，就想趁机试一试。
+** Emacs 学习
+  - 我最开始用的就是 GNU Emacs，裸奔了一会儿，记得刚开始还认真地会看 manual，后来开始上网抄配置。
+  - 在没有接触到 [[https://github.com/emacs-evil/evil][Evil mode]] 之前，我会不断地在 Emacs 和 vim 之间转换和纠结到底用谁，因为我觉得 Emacs 快捷键配置太傻x了。配置上 [[https://github.com/emacs-evil/evil][Evil mode]] 之后，我就离开 vim 了。
+  - 在最开始的阶段我印象比较深的参考网站是 [[https://sachachua.com/blog/][Sacha Chua]] 和 [[http://xahlee.info/][杀哥]]，偶尔也会逛逛 reddit 的 Emacs 版，但是那段时间更多是自己在不了解 elisp 的情况下摸索，感觉还是蛮痛苦的。
+  - 2020-2021年，我在知乎上发现了[[http://blog.binchen.org/][陈斌老师]]，在他那里看到了 Emacs 无限的可能性，开始觉得我是不是应该学一下 elisp。
+  - 2021年底-2022年，我个人的思想上和心态上经历了比较大的变化，从而导致我发现了许多好的博客和 [[https://emacs-china.org/][Emacs China]]，在 Emacs China 上 follow 了很多大佬，看他们怎么使用 Emacs。
+  - 最值得一提的是我在听完懒猫的那一期 Emacs Talk 节目之后下定决心开始[[https://yaoni.me/2022/04/04/214445-emacs_reference_manual_read.html][读 Elisp Reference Manual]]，现在进度还不错，而且确实有奇效。
+  - 现在大概处于 tumashu 说的 Emacs 阶段的第二阶段的 i 吧，不过自从读了上面的 manual 之后，感觉看别人的代码和写自己的代码都顺畅了许多。
+  
+* 日常工作流
+  - 我目前用的是 GNU Emacs 27 GUI 版本，然后使用自己的配置（还有一些bug）。
+  - 用 org mode 记录要做的 Jira ticket，然后写一些 source block 来解决问题 （literate programming），最后根据需要把整个 heading 下的内容到出到 Jira 或是 Confluence，然后粘贴到 ticket 里或是 Confluence 里。
+  - 用 Emacs 编辑大量 xml 文件，主要是用正则来做替换。
+  - 用 [[https://www.orgroam.com/][org roam]] 记录任何有趣的或是我不知道的知识。
+* 个人感悟
+  - 学习使用 Emacs 和 elisp 对自己的生活、工作，和学习是有实实在在的影响和帮助的。所以如果你跟我一样还在入门阶段感觉似懂非懂的话，千万不要放弃！
+  - 集中精力学习核心知识或是关键词，边缘知识就直接复制粘贴到知识库里，需要时根据关键词搜索即可。
+  - 人无完人，要学会接纳自己和他人的不完美（这是在后面推荐的幸福课里提到的 Give yourself the permission to be human）。
+  - Be the change you want to see in the world（依然是幸福课的一句摘抄）。
+  - 工作中学到的一点，人是一定会犯错的，所以大量的时间和精力要花在设计流程、减少犯错几率上，而不是千方百计提醒别人和自己不要犯错。另一方面，即使是犯错了也不必太自责。
+* 有价值的事情
+  - 坚持运动，我现在是每周两次一个小时的拳击。
+  - 阅读交叉、其他领域的书（我后面有推荐）。
+  - 学习培养自己的软实力，这是我今年在面试的时候突然想通的一件事。
+
+* 推荐
+  - [[https://www.orgroam.com/][org roam]]，帮助你建立起自己的知识库（第二大脑）。
+  - Ray Dalio 写的 Principles for Dealing with the Changing World Order
+  - Algorithms to live by
+  - [[https://open.163.com/newview/movie/courseintro?newurl=M6HV755O6][哈佛的幸福课]]
+
+    
+
