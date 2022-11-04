@@ -1,0 +1,43 @@
+** 嘉宾个人简介
+   - 姓名：beyondpie
+   - Emacs China Id: songpeng
+   - 网站: https://beyondpie.github.io
+
+** Emacs 初印象
+*** 为什么入坑和耗时多久
+   - 一个信任的师兄推荐Vim，开始喜欢纯键盘操作，后来师兄介绍说Emacs比Vim拓展性更强，2015年开始关注Emacs。
+   - 阅读[[https://github.com/redguardtoo/mastering-emacs-in-one-year-guide/blob/master/guide-zh.org][一年成为Emacs高手]], 上手Purcell的配置
+   - 大概一两个月就习惯Emacs的快捷键，尤其是大量使用evil-mode
+*** 使用经历，Elisp学习过程
+   - Emacs 是我平时本地写代码的主要方式，基本天天泡在Emacs里。
+   - 没有刻意学习Elisp，抄别人的配置时，发现代码本身还是比较容易懂的
+   - 2017年前后，使用spacemacs配置，看了子龙山人的视频，配置自己的spacemacs layer
+   - 2020年圣诞节，基于之前的经验，自己做[[https://github.com/beyondpie/.emacs.d][配置]]，借鉴了Purcell, Centaur Emacs 和懒猫的配置。
+     - 更希望自己完全控制Emacs
+     - 受spacemacs的空格作为快捷键的前置键影响
+     - evil-mode + evil-collection 已经满足了我绝大需求
+   - 2022年业余时间，开始阅读Elisp文档。
+   - 玩Emacs的过程，让我感到放松和享受, 是我的一个娱乐方式, 也是我缓解压力的方式。
+** 日常工作流
+    - 苹果全家桶：iphone，macbook pro，imac PC, iCloud, Apple Music。
+      - 邮件，日历，笔记等都是使用苹果的自带软件，没有采用Emacs的方式。
+    - 主要写python和R的代码，做数据分析，所以利用lsp-mode。
+    - helm-mode 控制我的搜索
+    - magit 作为git管理，并和远程集群做代码同步
+    - 偶尔使用Org做记录
+    - 利用elfeed查看Emacs近期相关信息
+    - 大量使用evil-mode
+**  有趣的事情
+   - 本科学习生物，研究生转向计算，做生物信息学
+   - 博士毕业后去互联网外企和大厂工作
+   - 2019年放弃互联网工作机会，在美国做生物信息学方面的博士后
+** 推荐环节
+*** Emacs packge
+   - 应该很多人都熟悉，general + evil + evil-collection 来模仿spacemacs的快捷键方式
+   - 如果有写R语言的人，强烈推荐Emacs中使用R，体验比在Rstudio中好很多。
+*** 其他最近觉得有价值的东西
+   - 推人及己
+     - 在听报告，对演讲者做报告时，不是为了炫耀自己知道多少，而是本着共同交流的态度，对对方友好，因为我们希望别人也这样对我们。
+     - 善待他人，所以我们也要善待自己。
+     - 对别人的工作要求严格，就要对自己也要求严格。
+   - 果粉
