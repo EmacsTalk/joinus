@@ -1,0 +1,80 @@
+#+title: Neovim
+#+DATE: <2023-08-18 Fri>
+
+* Neovim的历史
+** 蒂亚戈
+NeoVim的发起人之一是Thiago de Arruda（蒂亚戈·德·阿鲁达）。Lua诞生于巴西，而蒂亚戈也是巴西人。
+他是NeoVim项目的创始成员之一，同时也是其主要开发者之一。他在2013年左右开始了NeoVim项目，旨在重新设计和改进Vim的架构，以满足现代编辑器的需求。
+除了Thiago de Arruda之外，还有其他许多开发者也参与了NeoVim的发展。
+NeoVim是一个开源项目，吸引了来自全球范围的志愿者开发者的贡献，他们一起共同推动了NeoVim的成长和发展。
+虽然Thiago de Arruda是该项目的早期推动者之一，但NeoVim的成功归功于整个社区的努力
+
+** 蒂亚戈的吐槽
+#+BEGIN_QUOTE
+The author of NeoVim (Thiago de Arruda) tried to add support for multi-threaded plugins to Vim and has been stymied[1].
+I'm not sure how to get a patch merged into Vim. Bram Moolenar is the only person with commit access, and he's not a fan of most changes beyond bug fixes. My co-founder and I tried to add setTimeout & setInterval to vimscript[2]. Even six weeks of full-time effort and bending over backwards wasn't enough. Eventually we were just ignored.
+
+I've contributed to a lot of open source projects, and the Vim community has been the most difficult to work with. I've been writing C for almost two decades, and the Vim codebase is the worst C I've ever seen[3]. The project is definitely showing its age, and I'd love for something new to replace it.
+
+NeoVim 的作者（Thiago de Arruda）曾试图在 Vim 中添加对多线程插件的支持，但一直受阻[1]。
+我不知道如何将补丁合并到 Vim 中。Bram Moolenar 是唯一有提交权限的人，但他不喜欢除错误修复之外的大多数修改。我和我的联合创始人曾尝试在 vimscript[2] 中添加 setTimeout 和 setInterval。即使我们花了六周时间全心全意地努力也无济于事。最终，我们被置之不理。
+
+我为许多开源项目做出过贡献，而 Vim 社区是最难合作的。我写了将近二十年的 C 语言，而 Vim 代码库是我见过的最糟糕的 C 语言[3]。这个项目肯定已经显出老态，我希望能有新的东西来取代它。
+
+1. https://groups.google.com/d/msg/vim_dev/65jjGqS1_VQ/fFiFrrIB...
+
+2. https://groups.google.com/d/msg/vim_dev/-4pqDJfHCsM/LkYNCpZj...
+
+3. If you value your sanity, do not read eval.c. It is over 25,000 lines and has over 400 ifdefs. The first ifdef checks for Amiga; the second checks for VMS: https://github.com/b4winckler/macvim/blob/master/src/eval.c
+
+-- [[https://news.ycombinator.com/item?id=7279358][Ycombinator 2014 News]]
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Over its more than 20 years of life, Vim has accumulated about 300k lines of scary C89 code that very few people understand or have the guts to mess with.
+
+Another issue is that as the only person responsible for maintaining Vim's big codebase, Bram Moolenaar, has to be extra careful before accepting patches, because, once merged, the new code will be his responsibility.
+
+These problems make it very difficult to have new features and bug fixes merged into the core. Vim just can't keep up with the development speed of its plugin ecosystem.
+
+在其 20 多年的生命中，Vim 已经积累了大约 30 万行可怕的 C89 代码，很少有人能理解这些代码，也很少有人有胆量去搞这些代码。
+
+另一个问题是，作为维护 Vim 大代码库的唯一负责人，Bram Moolenaar 在接受补丁之前必须格外小心，因为一旦合并，新代码将由他负责。
+
+这些问题使得将新功能和错误修复合并到核心中变得非常困难。Vim 无法跟上插件生态系统的开发速度。
+
+-- [[ https://github.com/neovim/neovim/wiki/Introduction][Neovim wiki]]
+#+END_QUOTE
+
+Neovim就是在吐槽中诞生的。
+
+** neovim的目标
+- 简化维护并鼓励贡献
+- 多个开发人员分工合作
+- 无需修改内核即可启用高级用户界面
+- 最大限度地提高可扩展性
+
+** Neovim的特色
+- 现代图形用户界面
+- 可从任何语言（包括C/C++、C#、Clojure、D、Elixir、Go、Haskell、Java/Kotlin、JavaScript/Node.js、Julia、Lisp、Lua、Perl、Python、Racket、Ruby、Rust）访问 API
+- 嵌入式、可编写脚本的终端仿真器
+- 异步作业控制
+- 多个编辑器实例之间共享数据（shada）
+- 支持 XDG 基本目录
+- 与大多数 Vim 插件兼容，包括 Ruby 和 Python 插件
+
+  
+** Neovim的现状
+- Neovim使用lua进行配置
+- 现在有1,038 contributors
+- Neovim仓库
+  - Vim Script 42.6%
+  - C 29.7%
+  - Lua 26.5%
+  - Python 0.5%
+  - CMake 0.4%
+  - Shell 0.2%
+  - Other 0.1%
+- 截止到现在有14546个PR，其中有248个Open，14262个Close
+- 68.6k 个star
+- 4.8k个fork
