@@ -1,0 +1,130 @@
+#+TITLE: 对 Vim 作者的怀念：聊聊 Vim 的发展历史
+#+DATE: 2023-08-18T18:23:46+0800
+#+LASTMOD: 2023-08-18T18:25:14+0800
+#+AUTHOR: Jiacai Liu
+#+EMAIL: blog@liujiacai.net
+#+OPTIONS: toc:nil num:nil
+#+STARTUP: content
+
+主要是从网络上找的一些资料。
+
+* Vim 历史
+- [[https://twobithistory.org/2018/08/05/where-vim-came-from.html][Where Vim Came From]]
+** Ed
+- 1966，Bell Labs 雇佣了 Ken Thompson（刚在 UC Berkeley 的 EE 获得博士学位，在 Berkeley Timesharing System 使用了一种 [[https://en.wikipedia.org/wiki/QED_(text_editor)][QED]] 编辑器），到达 Bell Labs 后的第一件事，就是为 MIT Compatible Time-Sharing System 重写 QED，之后他有为 Multics 项目重写了 QED。
+
+ 与伯克利分时系统一样，Multics 项目也是麻省理工学院、通用电气公司和贝尔实验室的合作项目，旨在创建一个商业上可行的分时操作系统。
+ 美国电话电报公司（AT&T）最终认为这个项目毫无进展，于是退出了。汤普森和贝尔实验室的研究员丹尼斯-里奇（Dennis Ritchie）现在无法使用分时系统，又怀念这种系统提供的 "交互式计算的感觉"，于是他们开始创建自己的版本，也就是后来的 Unix。3 1969 年 8 月，当妻子和年幼的儿子去加利福尼亚度假时，汤普森组装了新系统的基本组件，"为操作系统、shell、编辑器和汇编器各分配了一周的时间 "4。
+
+ 编辑器被称为 ed，它基于 QED，但并非完全重新实现。汤普森决定放弃 QED 的某些功能：
+- 对正则表达式的支持减少了，因此只能理解相对简单的正则表达式
+- QED 允许用户通过打开多个缓冲区同时编辑多个文件，但 ed 一次只能使用一个缓冲区
+- QED 可以执行包含命令的缓冲区，而 ed 则不能
+
+这些简化可能是有必要的。丹尼斯-里奇（Dennis Ritchie）曾说，没有 QED 先进的正则表达式 "损失不大 "。ed 的一些特点：
+- ed is now a part of the POSIX specification,
+- ed is a true line editor. It was written and widely used in the days of the teletype printer.
+- Like Vim, ed is a modal editor; to enter input mode from command mode you would use the insert command (i), the append command (a), or the change command (c), depending on how you are trying to transform your text. ed also introduced the s/foo/bar/g syntax for finding and replacing, or “substituting,” text.
+** Em
+对汤普森和里奇来说，ed 已经足够好用了。其他人则发现它很难使用，它也因此声名狼藉，成为 Unix 仇视新手的一个特别恶劣的例子。
+
+1975 年，一个名叫乔治-库鲁里斯（George Coulouris）的人在伦敦玛丽女王学院的 Unix 系统上开发了一个改进版 ed。
+库鲁里斯在编写编辑器时利用了玛丽皇后学院的视频显示器。与 ed 不同的是，Coulouris 的程序允许用户在屏幕上就地编辑单行，通过按键逐行浏览（想象一下在一行一行地使用 Vim）。Coulouris 将自己的程序命名为 em，即 "凡人编辑器"（editor for mortals），据说这是在汤普森访问玛丽皇后学院，看到 Coulouris 制作的程序后，汤普森说他在编辑文件时不需要查看文件的状态，并将其否决后，Coulouris 受到启发而制作的。
+
+1976 年，库鲁里斯带着 em 来到加州大学伯克利分校，作为访问学者在计算机科学系度过了一个夏天。此时距离肯-汤普森离开伯克利到贝尔实验室工作刚好十年。
+在伯克利，库鲁里斯遇到了比尔-乔伊（Bill Joy），他是一名研究伯克利软件发行版（BSD）的研究生。库鲁里斯向乔伊展示了ed，乔伊从库鲁里斯的源代码开始，创建了一个改进版的ed，名为ex，意为 "扩展的ed"（extended ed）。ex 在很大程度上与 ed 兼容，但它增加了两种模式：一种是 "打开 "模式，它可以像使用 em 那样进行单行编辑；另一种是 "可视化 "模式，它可以占据整个屏幕，像我们今天所习惯的那样对整个文件进行实时编辑。
+
+1979 年，在 BSD 的第二个版本中，引入了一个名为 vi 的可执行文件，其作用仅仅是在可视模式下打开 ex。
+
+
+乔伊在通用技术领域和 Sun Microsystems 公司都留下了不朽的功绩。这位 Sun 的联合创始人本周宣布离开公司。乔伊的成就包括 BSD Unix、NFS、UltraSPARC 设计和 Java 方面的一些工作。但真正俘获 Reg 读者心的还是 1976 年创建的 vi。
+** [[https://www.theregister.com/2003/09/11/bill_joys_greatest_gift][Joy 的回忆]]
+肯-汤普森（Ken Thompson）来到伯克利，带来了这个坏掉的 Pascal 系统，我们就利用暑假时间修好了它。在修复的过程中，我们对使用的编辑器感到沮丧，因为它被命名为 ed。
+
+我们从伦敦大学学院一个叫乔治-库鲁里斯（George Coulouris）的人那里得到了这个代码*，叫做 "凡人编辑器"（Editor for Mortals），因为只有神仙才能用 ed 做任何事情。顺便说一句，在那个夏天之前，我们只能用大写字母打字。那年夏天，我们的终端机有了小写 ROM。终于能用上小写字母了，真是令人兴奋。
+
+于是我们修改了 em，创建了 en。我不知道当时有没有 eo 或 ep，但终于有了 ex。[我记得 en，但不知道怎么变成了 ex。我家里有一个终端和一个 300 波特的调制解调器，这样光标就可以移动了，我就这样熬了几个月的夜，写出了 vi。
+
+Linux Mag 接着问"所以你并不像大家说的那样 一个周末就写出了vi？"
+
+不，花了很长时间。这真的很不容易，因为你得记住，我是想让它能在 300 波特的调制解调器上使用。这也是为什么会有这么多奇怪的命令。在调制解调器上使用屏幕编辑器只能勉强运行。它只是勉强够快而已。1200 波特调制解调器是一种升级。现在的 1200 波特已经很慢了。
+
+9600 波特比你的读取速度还快。而 1200 波特则要慢得多。因此，当编辑器的速度比你的思维速度还慢的时候，编辑器就已经被优化了，这样你就可以编辑并感觉到自己的工作效率了。现在，电脑的速度已经远远超过了你的思维，没有人再能理解这一点了。
+
+当时，在麻省理工学院的实验室里，使用 Emacs 的人基本上都是通过光纤通道连接到主机的。他们使用的是 PDP-10，相比之下，这是一台巨大的机器，屏幕速度快到无以复加的地步。
+
+所以他们可以发出屏幕闪烁的有趣命令，而与此同时，我却坐在伯克利的二战剩余住房里，用一个调制解调器和一个只能勉强把光标从底线上移开的终端。
+
+这个世界现在已经消亡了。人们不知道，vi 是为一个已经不存在的世界编写的--除非你决定买一部卫星电话，用它以 2400 波特的速度连接网络。以前，1200 波特的网络是完全可用的。但现在你不能用 2400 波特的速度上网，因为广告都是 24KB 的。
+
+
+
+** Vi
+ex/vi（以下简称 vi）建立了我们现在与 Vim 相关的大多数约定俗成的规范，而这些规范还不是 ed 的一部分。乔伊使用的视频终端是李尔 Siegler ADM-3A，它的键盘上没有光标键。相反，箭头被画在 h、j、k 和 l 键上，这就是为什么乔伊在 vi 中使用这些键来移动光标。ADM-3A 键盘上的转义键（escape ）也是我们今天找到的制表符键（tab）的位置，这就解释了为什么这样一个难以触及的键会被分配给像退出模式这样普通的操作。
+
+命令前的 =:= 字符也来自 vi，vi 在常规模式下（即运行 ex 时进入的模式）使用 =:= 作为提示符。这解决了人们长期以来对 ed 的抱怨，因为它一旦启动，就会以完全的沉默迎接用户。在可视模式下，保存和退出都需要输入经典的 =:wq= 。 =yank= =putting= =mark= 以及用于设置选项的 =set= 命令都是原始 vi 的一部分。今天，我们在 Vim 中进行基本文本编辑时使用的功能基本上都是 vi 的功能。
+
+vi 是 BSD Unix 系统中除 ed 之外唯一的文本编辑器。当时，Emacs 的价格高达数百美元（这是在 GNU Emacs 之前），因此 vi 大受欢迎。但 vi 是 ed 的直系后代，这意味着如果没有 AT&T 源代码许可证，就不能修改源代码。这促使一些人创建了 vi 的开源版本。
+- 1987 年出现了 [[https://en.wikipedia.org/wiki/Stevie_(text_editor)][STEVIE]]（ST Editor for VI Enthusiasts）VI 爱好者的 ST 编辑器。Vim 的先驱。
+- 1990 年出现了 [[https://en.wikipedia.org/wiki/Elvis_(text_editor)][Elvis]]，项目[[http://elvis.the-little-red-haired-girl.org/][主页]]
+- 1994 年出现了 [[https://en.wikipedia.org/wiki/Nvi][nvi]]（new vi）
+
+  其中一些克隆版本增加了语法高亮和分割窗口等额外功能。尤其是 Elvis，由于许多 Elvis 用户的强烈要求，它的许多功能都被纳入了 Vim 中。
+** Vim
+=Vim= 现在是 =Vi Improved= 的缩写，最初是指 =Vi Imitation= （Vi 的仿制）。与许多其他 vi 克隆版一样，Vim 一开始也是试图在一个没有 vi 的平台上复制 vi。在荷兰芬洛一家复印机公司工作的荷兰软件工程师布拉姆-穆莱纳尔（Bram Moolenaar）希望在他全新的 Amiga 2000 上使用类似 vi 的软件。Moolenaar 已经习惯了在自己大学的 Unix 系统上使用 vi，已经成了肌肉记忆（ it was now “in his fingers.）。因此，1988 年，Moolenaar 以现有的 STEVIE vi 克隆版为起点，开始了 Vim 的开发工作。
+
+Moolenaar 很喜欢 STEVIE，但很快就发现其中缺少了许多 vi 命令。因此，在 Vim 的第一个版本中，Moolenaar 将 vi 兼容性放在了首位。有人编写了一系列 vi 宏，通过与 vi 兼容的编辑器运行这些宏，可以解决[[https://github.com/isaacs/.vim/tree/master/macros/maze][随机生成的迷宫问题]]。
+
+Moolenaar 成功地让这些宏在 Vim 中运行。1991 年，Vim 作为 "Vi 仿制品 "13 首次在弗雷德-费什第 591 号（Fred Fish disk）磁盘上发布。穆莱纳尔增加了一些功能（包括多级撤销和针对编译器错误的『快速修复』模式），这意味着 Vim 已经超越了 vi。但在 1993 年通过 FTP 发布 Vim 2.0 之前，Vim 一直是 "Vi 仿制品"。
+
+#+begin_quote
+弗雷德-菲什（Fred Fish）是一位美国程序员，他每月都会寄出一张软盘，里面是为 Amiga 平台精选的最佳开源软件。
+#+end_quote
+
+2006 年，Vim 被《Linux 日报》读者评为最受欢迎的编辑器。14 如今，根据 Stack Overflow 2018 年的开发者调查，Vim 是最受欢迎的文本模式（即终端模拟器）编辑器，25.8% 的软件开发人员（40% 的系统管理员/开发运营人员）使用它。Emacs 当然仍有追随者，但有些人认为编辑器大战已经结束，Vim 赢了16。2018 年 Stack Overflow 开发者调查显示，情况确实如此；只有 4.1% 的受访者使用 Emacs。
+
+Vim 为何如此成功？很明显，人们喜欢 Vim 提供的功能。但我认为，Vim 的悠久历史表明，它的优势不仅仅在于它的功能集。Vim 的代码库可以追溯到 1988 年，当时 Moolenaar 开始研究它。另一方面，"wq 文本编辑器"--Unix-y 文本编辑器工作方式的更广阔愿景--可以追溯到半个世纪以前。wq 文本编辑器 "有几种不同的具体表达方式，但部分归功于 Bill Joy 和 Bram Moolenaar 对向后兼容性的不同寻常的关注，随着时间的推移，好的想法逐渐积累起来。从这个意义上说，"wq 文本编辑器 "是运行时间最长、最成功的开源项目之一，它得到了计算机世界中一些最伟大思想家的贡献。我并不认为 "初创公司抛弃所有先例，创造颠覆性新软件 "的开发方式一定是不好的，但 Vim 提醒我们，协作和渐进的方式也能创造奇迹。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* [[https://en.wikipedia.org/wiki/Editor_war][编辑器之战]]
+
+- 作为对 Emacs 功能主义的嘲讽，vi 的拥护者将 Emacs 描述为 "一个伟大的操作系统，只缺少一个像样的编辑器"。
+- Emacs 的拥护者则回应说，编辑器实际上非常好，但操作系统还需要改进（指 Emacs 著名的缺乏并发性，现在已经增加了并发性）。
+* Bram 去世的消息
+** [[https://groups.google.com/g/vim_announce/c/tWahca9zkt4?pli=1][Message from the family of Bram Moolenaar]]
+It is with a heavy heart that we have to inform you that Bram Moolenaar passed away on 3 August 2023.
+Bram was suffering from a medical condition that progressed quickly over the last few weeks.
+
+Bram dedicated a large part of his life to VIM and he was very proud of the VIM community that you are all part of.
+* Bram 在 2022 的[[https://evrone.com/blog/bram-moolenaar-interview][采访]]
+[[https://evrone.com/blog/bram-moolenaar-interview][Bram Moolenaar: "Vim is a very important part of my life."]]
+- Evrone: In your opinion, is software development closer to art or science? Does it allow deviations from traditional techniques or do you have to strictly follow the main direction?
+  - It’s much more of a craft. And a craftsman uses whatever tools he thinks will get the best result, no matter if they are what everybody else is using or something different. And a good craftsman makes his own tools when needed.
+
+- Opening Vim, we can’t miss your call to help children living in Uganda.
+  - 30’000 euro per year is raised this way, which is helping about 50 children finish their education, from primary school to university. The donations come from a few big sponsors and many small donations.
+
+- What was the reason for you going this way instead of introducing some "beginner-friendly" mode with a gradual complexity increase?
+  - Without this forced learning I might never have taken the leap to learn to use Vi, and the course of history would have been very different.
+- Two years ago, an experimental fork Vim9 was announced. Could you tell us a bit more about this fork? What is the current stage of this project?
+  - Vim9 is not a fork but the next step in making Vim better. I did an experiment at first to see if compiling a function into byte code would work to make the Vim script much faster. It turned out it worked well, but it did require making changes in the syntax.
+- Using plenty of web manuals we can discover great plugins to extend the awesome functionality of Vim. Do you have any plugin favorites and must-haves you could recommend to our audience?
+  - I have to admit I don’t use many plugins, other than what is included with the distribution (such as matchit and termdebug). When I need something I tend to either make a quick hack or add it to the Vim base. That’s the luxury of being the creator :-).
+
+- Considering your extensive experience, could you share any life hacks for developers on how to maintain productivity over the years? Thank you!
+  - 不要总熬夜编码,早睡早起更有利于保持高效。大多数人上午效率最高,所以设置一个工作的截止时间很重要。做好记录,然后放松休息,第二天清晨继续工作。睡眠常常能给棘手问题带来新的思路和见解。“睡一觉醒来豁然开朗”是真的,至少对我来说是这样。
+  - 另一件事是,有时你需要的不是复杂的解决方案或无休止的配置调优,而只是快速的输入。Vim中的宏录制和重复就可以轻松完成许多重复性任务,不必写插件。
