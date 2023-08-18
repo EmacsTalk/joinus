@@ -1,6 +1,6 @@
 #+TITLE: 对 Vim 作者的怀念：聊聊 Vim 的发展历史
 #+DATE: 2023-08-18T18:23:46+0800
-#+LASTMOD: 2023-08-18T18:25:14+0800
+#+LASTMOD: 2023-08-18T21:19:31+0800
 #+AUTHOR: Jiacai Liu
 #+EMAIL: blog@liujiacai.net
 #+OPTIONS: toc:nil num:nil
@@ -110,6 +110,28 @@ It is with a heavy heart that we have to inform you that Bram Moolenaar passed a
 Bram was suffering from a medical condition that progressed quickly over the last few weeks.
 
 Bram dedicated a large part of his life to VIM and he was very proud of the VIM community that you are all part of.
+** 社区其他怀念文章
+- [[https://news.ycombinator.com/item?id=37011324][Bram Moolenaar has died | Hacker News]]
+- [[https://neovim.io/news/2023/08][Vim Boss]]
+- [[https://github.com/vim/vim/pull/12749][即将发布的 9.1 将会专门纪念 Bram]]，就像 9.0 专门纪念 [[https://groups.google.com/g/vim_announce/c/MJBKVd-xrEE/m/joVNaDgAAgAJ][Sven Guckes]]
+- [[https://j11g.com/2023/08/07/the-legacy-of-bram-moolenaar/][The Legacy of Bram Moolenaar]]
+- [[https://www.theregister.com/2023/08/07/bram_moolenaar_obituary/][Vim creator Bram Moolenaar dies aged 62 • The Register]]
+** 生平
+- 1961 年出生，
+- 他的其他项目包括 [[http://www.a-a-p.org/][A-A-P]] 构建工具和 [[https://www.moolenaar.net/z/zimbu/spec/zimbu.html][Zimbu]] 编程语言。
+- 2006 年至 2021 年，他在苏黎世的谷歌公司工作，主要负责谷歌日历和 Vim。他在 2022 年 10 月报告了健康问题，这可以看作是他在 GitHub 上的贡献逐渐减少的一个间隙。他最后一次在 Vim 用户邮件列表上发表评论是在 7 月 6 日。
+  是的，在谷歌工作了 15 年之后，我觉得已经够了，再加上打算搬到气候更宜人的地方，所以决定退休后去特内里费岛。再也不用铲雪了！
+
+从谷歌退休时的访谈：
+#+begin_quote
+我加入谷歌时，它还有点初创公司的感觉。在苏黎世，只有一百多名工程师，我认识他们中的大多数人，在我们举行的座谈会上，大多数人都会参与并提问。现在，苏黎世谷歌有 4000 到 5000 人，分布在十几座大楼里。
+
+谷歌苏黎世公司也变得更加正式，这样的发展并不令人意外。这不是坏事，但肯定少了很多乐趣。我看到很多人更关注自己的下一次晋升，而不是让用户满意。我对创建用户友好型软件更感兴趣，但不知何故，这并不总能得到回报。
+
+我确实打算花更多时间在 Vim 上。但我目前正忙于搬家、修整房子和安顿下来。因此没有立竿见影的效果。事实上，我的收件箱现在有点满。
+#+end_quote
+
+
 * Bram 在 2022 的[[https://evrone.com/blog/bram-moolenaar-interview][采访]]
 [[https://evrone.com/blog/bram-moolenaar-interview][Bram Moolenaar: "Vim is a very important part of my life."]]
 - Evrone: In your opinion, is software development closer to art or science? Does it allow deviations from traditional techniques or do you have to strictly follow the main direction?
@@ -128,3 +150,25 @@ Bram dedicated a large part of his life to VIM and he was very proud of the VIM 
 - Considering your extensive experience, could you share any life hacks for developers on how to maintain productivity over the years? Thank you!
   - 不要总熬夜编码,早睡早起更有利于保持高效。大多数人上午效率最高,所以设置一个工作的截止时间很重要。做好记录,然后放松休息,第二天清晨继续工作。睡眠常常能给棘手问题带来新的思路和见解。“睡一觉醒来豁然开朗”是真的,至少对我来说是这样。
   - 另一件事是,有时你需要的不是复杂的解决方案或无休止的配置调优,而只是快速的输入。Vim中的宏录制和重复就可以轻松完成许多重复性任务,不必写插件。
+* Vim's future
+* [[https://changelog.com/podcast/450][Why we 💚 Vim (Changelog Interviews #450) |> Changelog]]
+* Vim [[https://en.wikipedia.org/wiki/Vim_(text_editor)][版本发布]]
+- https://moolenaar.net/vimstory.pdf
+| Date               | Version | Changes and additions                                                                                                           |
+| June, 1987         |     N/A | Tim Thompson releases Stevie (ST editor for VI enthusiasts), a limited vi clone for the Atari ST, posting the source on Usenet. |
+| June, 1988         |     N/A | Tony Andrews improves Stevie, and ports it to Unix and OS/2, releasing version 3.10 on Usenet.                                  |
+| 1988               |     1.0 | Bram Moolenaar creates Vi IMitation for the Amiga, based on Stevie, never publicly released                                     |
+| November 2, 1991   |    1.14 | First public release for the Amiga on Fred Fish disk #591                                                                       |
+| 1992               |    1.22 | Port to Unix, never publicly released.[18] Vim now competes with vi.                                                            |
+| December 14, 1993  |     2.0 | This is the first release using the name Vi IMproved.                                                                           |
+| August 12, 1994    |     3.0 | Support for multiple windows                                                                                                    |
+| May 29, 1996       |     4.0 | Graphical user interface                                                                                                        |
+| February 19, 1998  |     5.0 | Syntax highlighting, basic scripting (user defined functions, commands, etc.)                                                   |
+| September 26, 2001 |     6.0 | Folding, plugins, multi-language, etc.                                                                                          |
+| May 7, 2006        |     7.0 | Spell checking, code completion, tab pages, current line and column highlighting, undo branches, and more                       |
+| August 15, 2010    |     7.3 | Lua support, Python3 support, Blowfish encryption, persistent undo/redo                                                         |
+| August 10, 2013    |     7.4 | A new, faster regular expression engine.                                                                                        |
+| September 12, 2016 |     8.0 | Asynchronous I/O support, jobs, lambdas, etc.                                                                                   |
+| May 18, 2018       |     8.1 | Terminal window support and terminal gdb plugin.                                                                                |
+| December 13, 2019  |     8.2 | Popup windows, text properties.                                                                                                 |
+| June 28, 2022      |     9.0 | Vim9 script                                                                                                                     |
