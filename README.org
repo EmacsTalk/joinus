@@ -60,7 +60,7 @@ macOS/iOS 用户推荐使用系统自带的 [[https://apps.apple.com/cn/app/voic
 
 * 联系方式
 - TG 听友群：https://t.me/emacstalk
-- 邮件：[[mailto:emacstalk@liujiacai.net][emacstalk@liujiacai.net]]
+- 邮件：[[mailto:hello@liujiacai.net][hello@liujiacai.net]]
 - 主播微信号： =jiacai2050= ，QQ 号： =1065211486= 。最好备注下 =EmacsTalk 嘉宾=
 
 * 写在最后
