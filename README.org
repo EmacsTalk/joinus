@@ -40,18 +40,7 @@
 - 5-6 为主播的工作
 
 * 录制方式
-理论上所有的录制都采用远程方式（一般是腾讯会议），这也是大多数 Podcasts 做法。为了保证录音的效果，一般采用的做法是：
-- 主播与嘉宾分别 *只录制* 自己的声音，最后在剪接时把多个声轨合并成这一个
-
-这可以最大程度避免网络带来的不确定性，一般来说需要两个设备，比如：
-1. 手机录音
-2. 电脑端插着耳机，参加会议
-
-macOS/iOS 用户推荐使用系统自带的 [[https://apps.apple.com/cn/app/voice-memos/id1069512134][voice memos（语音备忘录）]] 即可，不需要什么高级软件。
-
-* 其他播客的一些参考
-- [[https://anobody.im/article/podcastforbeginner/][新手如何从零开始一档播客]]
-- https://pythonhunter.org/howto
+理论上所有的录制都采用远程方式（一般是腾讯会议），这也是大多数 Podcasts 做法。
 
 * 注意事项
 - 录制过程尽量避免打断，条件允许的话，推荐手机开飞行模式
@@ -60,8 +49,9 @@ macOS/iOS 用户推荐使用系统自带的 [[https://apps.apple.com/cn/app/voic
 
 * 联系方式
 - TG 听友群：https://t.me/emacstalk
+- Discord 听友群：https://discord.gg/AuvBvp5zgJ
 - 邮件：[[mailto:hello@liujiacai.net][hello@liujiacai.net]]
-- 主播微信号： =jiacai2050= ，QQ 号： =1065211486= 。最好备注下 =EmacsTalk 嘉宾=
+- 主播微信号： =jiacai2050=  。最好备注下 =EmacsTalk 嘉宾=
 
 * 写在最后
 - 感谢每一位嘉宾的参与，希望您在 EmacsTalk 能有自己的收获
